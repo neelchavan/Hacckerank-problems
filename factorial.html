@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            factorial
+        </title>
+
+
+        <script type="text/javascript">
+        
+        function btn()
+        {
+            
+            var fact = 1;
+            var no = Number(document.getElementById("num").value);
+             
+
+            for(var i=1;i<=no;i++)
+            {
+                fact = fact * i;
+            }
+           
+            document.getElementById("ans").value = fact;
+        }
+     
+        </script>
+    </head>
+    <body>
+        <input id="num">
+        <button onclick="btn()">CLICK</button>
+        <input id="ans">
+    </body>
+</html>
+
+
