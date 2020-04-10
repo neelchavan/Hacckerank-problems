@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            grade score
+        </title>
+        <script type="text/javascript">
+
+        function btn()
+        {
+            var grade = document.getElementById("grade").value;
+            var text;
+
+            if((grade>25) && (grade<=30)) // && means boolean operator ,for it to become true both of the statements should be true
+            {
+                text = "A";
+            }
+            else if((grade>20) && (grade<=25))
+            {
+                text = "B";
+            }
+            else if((grade>15) && (grade<=20))
+            {
+                text = "C";
+            }
+            else if((grade>10) && (grade<=15))
+            {
+                text = "D";
+            }
+            else if((grade>5) && (grade<=10))
+            {
+                text = "E";
+            }
+            else if((grade>=0) && (grade<=5))
+            {
+                text = "FAIL";
+            }
+            else
+            {
+                text = "awww please enter something..";
+            }
+            document.getElementById("demo").innerHTML= text;
+        }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="grade">
+       <button onclick="btn()">CHECK</button>
+       <p id="demo"></p>
+    </body>
+</html>
