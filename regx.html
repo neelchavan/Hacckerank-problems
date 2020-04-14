@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+          Character Sets In Regular expression's 
+        </title>
+
+        <script type="text/javascript">
+
+            function validation()
+            {
+                var user = document.getElementById("user").value;
+
+              
+                var regx = /^([aeiou]).[a-z]{2,}\1$/gm;
+            
+                if(regx.test(user) )
+              
+                {
+                    alert("valid user");
+                }
+                else
+                {
+                    alert("invalid user");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        
+
+            <input id="user" type="text" placeholder="username">
+            <br><br>
+           
+            <button onclick="validation()">SUBMIT</button>
+       
+    </body>
+</html>
