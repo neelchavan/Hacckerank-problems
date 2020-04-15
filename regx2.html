@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Regular expression 2
+        </title>
+
+        <script type="text/javascript">
+
+            function validation()
+            {
+                var user = document.getElementById("user").value;
+
+              
+                var regx = /^(Mr[.]|Mrs[.]|Ms[.]|Dr[.]|Er[.])[A-Z][a-z]{0,} *$/gm;
+            
+                if(regx.test(user) )
+              
+                {
+                    alert("valid user");
+                }
+                else
+                {
+                    alert("invalid user");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        
+
+            <input id="user" type="text" placeholder="username">
+            <br><br>
+           
+            <button onclick="validation()">SUBMIT</button>
+       
+    </body>
+</html>
